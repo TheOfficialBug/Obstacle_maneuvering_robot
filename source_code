@@ -3,7 +3,7 @@
 #include <Servo.h>          
 #include <NewPing.h>        
 
-//our L298N control pins
+//L298N control pins
 const int LeftMotorForward = 7;
 const int LeftMotorBackward = 6;
 const int RightMotorForward = 4;
@@ -71,9 +71,7 @@ void loop(){
       moveStop();
     }
   }
-//  else{
-//    moveForward(); 
-//  }
+ 
     distance = readPing();
 }
 
